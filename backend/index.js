@@ -9,7 +9,7 @@ const EmployeeModel = require("./models/Employee");
 const app = express();
 app.use(cors(
   {
-    origin: ["https://deploy-mern-1whq.vercel.app"],
+    origin: ["https://mern-stack-crud-project-frontend.vercel.app"],
     methods: ["GET", "POST"],
     credentials: true,
   }
