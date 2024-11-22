@@ -40,7 +40,7 @@ const UpdateEmployee = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:3001/updateEmployee/${id}`)
+      .get(`https://mern-stack-crud-project-lime.vercel.app/updateEmployee/${id}`)
       .then((result) => {
         const data = result.data;
         // Ensure courses is always an array
@@ -73,7 +73,7 @@ const UpdateEmployee = () => {
     e.preventDefault();
     try {
       const response = await axios.put(
-        `http://localhost:3001/updateEmployee/${id}`,
+        `https://mern-stack-crud-project-lime.vercel.app/updateEmployee/${id}`,
         formData
       );
       console.log("Employee updated successfully:", response.data);

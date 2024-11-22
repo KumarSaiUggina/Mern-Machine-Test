@@ -61,7 +61,7 @@ const CreateEmployee = () => {
     // const employeeId = `EMP-${Date.now()}`; // Example unique ID generation
     try {
       const response = await axios.post(
-        "http://localhost:3001/createEmployee",
+        "https://mern-stack-crud-project-lime.vercel.app/createEmployee",
         {
           ...formData,
           // uniqueId: employeeId,

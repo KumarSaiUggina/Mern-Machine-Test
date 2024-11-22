@@ -16,7 +16,7 @@ const AuthForm = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.post("http://localhost:3001/auth", {
+      const response = await axios.post("https://mern-stack-crud-project-lime.vercel.app/auth", {
         email,
         password,
       });

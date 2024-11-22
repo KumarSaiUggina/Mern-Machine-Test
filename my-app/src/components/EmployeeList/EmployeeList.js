@@ -14,7 +14,7 @@ const EmployeeList = () => {
   useEffect(() => {
     const fetchEmployees = async () => {
       try {
-        const response = await axios.get("http://localhost:3001/employeeList");
+        const response = await axios.get("https://mern-stack-crud-project-lime.vercel.app/employeeList");
         setEmployees(response.data);
         setLoading(false);
       } catch (err) {
@@ -52,7 +52,7 @@ const EmployeeList = () => {
   const handleDeleteClick = async (id) => {
     if (window.confirm("Are you sure you want to delete this employee?")) {
       try {
-        await axios.delete(`http://localhost:3001/employeeList/${id}`); // Send delete request to the server
+        await axios.delete(`https://mern-stack-crud-project-lime.vercel.app/employeeList/${id}`); // Send delete request to the server
         setEmployees(employees.filter((employee) => employee._id !== id)); // Update local state
       } catch (err) {
         console.error("Error deleting employee:", err);
