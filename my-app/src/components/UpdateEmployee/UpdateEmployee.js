@@ -36,6 +36,7 @@ const UpdateEmployee = () => {
         : prevData.courses.filter((course) => course !== value),
     }));
   };
+  axios.defaults.withCredentials = true; // default
 
   useEffect(() => {
     axios
